@@ -229,23 +229,23 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates",
-                                url="https://t.me/OnePunchUpdates",
+                                url="https://t.me/StrawHat_Bots",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting Started",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="My Creator🥀",
+                                url="https://t.me/Zoro_StrawHat7",
                             ),
                             InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                text="🗄Source",
+                                url="https://github.com/",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="☠️ Kaizoku Network",
-                                url="https://t.me/Kaizoku/4",
+                                text="☠️StrawHat Network",
+                                url="https://t.me/Team_Straw_Hat",
                             ),
                         ],
                     ],
