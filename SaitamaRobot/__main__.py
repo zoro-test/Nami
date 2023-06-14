@@ -53,25 +53,24 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hey there* {} *! My name is Denji(チェンソーマン(Chainsaw Man)*[❗](https://telegra.ph/file/d81317ff203d640da6e95.jpg)
-*I am Demon Hunter and
-I Slay Bad Demons and help admins manage their groups with My Commands!
+*Hey there* {} *! My name is Nami (StrawHat)*[❗](https://telegra.ph/file/ece7789ffcadc96933fda.jpg)
+*I help admins manage their groups with My Commands!
 Type /help to see my functions and commands...*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🙃 ADD Denji TO YOUR GROUP",url="t.me/DenjiXRobot?startgroup=true"),
+            text="🙃 ADD NAMI TO YOUR GROUP",url="t.me/Nami_StrawHatBOT?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-            text="📮 Support", url="https://t.me/Mitsuri_Logs_Support"),
+            text="📮 Support", url="https://t.me/StrawHat_Support"),
           
 
 
 InlineKeyboardButton(
-            text="📃 Updates Channel", url="https://telegram.dog/TeamxXYZ"
+            text="📃 Updates Channel", url="https://t.me/StrawHat_Bots"
         ),
 
     ],
@@ -84,9 +83,9 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-Hey there! My Name is Denji!
+Hey there! My Name is NAMI!
 I am an Anime themed group management bot.
-To add me to your group click ["HERE"](http://t.me/DenjiXRobot?startgroup=botstart)
+To add me to your group click ["HERE"](http://t.me/Nami_StrawHatBOT?startgroup=botstart)
 
 *Main commands available:*
  • /help: PM's you this message.
@@ -102,7 +101,9 @@ All commands can either be used with / or !.
 And the following:
 """
 
-DONATE_STRING = """Heya, glad to hear you want to donate! Denji is Free For all, so we don't really need any donations 💕💕."""
+DONATE_STRING = """Donate — TEAM Straw Hat 
+ View http://telegra.ph/Donate--Team-Straw-Hat-04-26 For Donation❤️ 
+ For more Contact — @Zoro_StrawHat7!  >_<"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -343,16 +344,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Gabi*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Nami StrawHat*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_shasa's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Falco-Grice/GabiBraunRobot).
-                 \n\nIf you have any question about *Gabi*, let us know at .""",
+                 \n\nIf you have any question about *Nami*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -377,8 +376,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *gabi*
-                 \nHere is the [Source Code](https://github.com/HuntingBots/AsunaRobot) .""",
+            text=""" Hi..👩‍💼 I'm *Nami StrawHat*
+                 \nHere is the [Source Code](https://github.com/ZoroStrawHat7) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -621,7 +620,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1610284626 and DONATION_LINK:
+        if OWNER_ID != 6260522360 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
